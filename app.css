@@ -1,0 +1,38 @@
+body {
+    align-content: center;
+    align-self: auto;
+    background-color: red;
+}
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+}
+
+#countLabelTwo{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+}
+#h2 {
+    font-size: large;
+}
+
+.h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font: bolder;
+}
+
+.teams {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font: bolder;
+}
+
+.buttons {
+    align-items: center;
+    align-content: center;
+    max-width: fit-content;
+}
