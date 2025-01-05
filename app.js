@@ -109,7 +109,7 @@ inningReset.onclick = function() {
     inningCount.textContent = inningCounter;
 }
 
-//Innings Timer with 3 Outs If / Else Func
+//Innings Timer with 3 Outs If statement stored in checkOuts Func
 
     //Team One Outs Functions
 oneOutUp.onclick = function() {
