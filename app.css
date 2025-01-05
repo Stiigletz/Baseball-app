@@ -1,38 +1,70 @@
 body {
     align-content: center;
     align-self: auto;
-    background-color: red;
-}
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgb(252, 0, 42) 0%, rgb(7, 158, 32) 100%);}
 
 #countLabel{
     display: block;
     text-align: center;
-    font-size: 10em;
+    font-size: 8em;
 }
 
 #countLabelTwo{
     display: block;
     text-align: center;
-    font-size: 10em;
+    font-size: 8em;
 }
 #h2 {
-    font-size: large;
-}
-
-.h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     font: bolder;
 }
 
-.teams {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     font: bolder;
 }
 
-.buttons {
-    align-items: center;
-    align-content: center;
+#teamOne {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font: bolder;
+    
+    
+}
+
+#teamTwo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font: bolder;
+}
+
+#buttons {
+    margin: auto;
     max-width: fit-content;
+}
+
+.flex-container {
+    margin-right: auto;
+    font-style: oblique;
+    font-size: x-large;
+    color: azure;
+}
+
+#tOneOuts {
+    margin-right: auto;
+    font-style: oblique;
+    font-size: x-large;
+    color: azure;
+
+}
+
+#tTwoOuts {
+    margin-right: auto;
+    font-style: oblique;
+    font-size: x-large;
+    color: azure;
+
 }

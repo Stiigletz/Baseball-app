@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="app.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SportPocket</title>
     <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
+    <link rel="stylesheet" href="app.css">
     <label id="countLabel">0</label>
     <div>
         <center>
@@ -28,22 +31,47 @@
 <label id="countLabelTwo">0</label>
 <div id="teamTwo">
     <center>
-    <h2 label="teamTwo">Team Name</h1>
+    <h2 label="teamTwo">Team Two</h2>
     <input id="twoInput", placeholder="Input Team Name Here">
     <button id="savenameTwo">Save Team Name</button>
 </center>
 </div>
 
 <br>
+
 <div id="buttons">
-<center>
 <button id="increaseTwo">Increase</button> 
 <Button id="decreaseTwo">Decrease</Button>
 <Button id="clearTwo">Clear Scores</Button>
-</center>  
 </div>
 
+<div class="flex-container">
+    <label id="inning">Inning</label>
+    <label id="inningCount">1</label>
+    <button id="inningCntUp">↑</button>
+    <button id="inningCntDwn">↓</button>
+    <button id="inningRst">Reset</button>
+</div>
+<br>
+<br>
 
+<div id="tOneOuts">
+    <h3>Team One Outs</h3>
+    <label id="teamOneOutsLabel">0</label>
+        <button id="oneOutUp">+1 Out</button>
+        <button id="oneOutDwn">-1 Out</button>
+        <button id="oneOutRst">Reset Outs</button>
+</div>
+<br>
+<br>
+<div id="tTwoOuts">
+    <h3>Team Two Outs</h3>
+    <label id="teamTwoOutsLabel">0</label>
+        <button id="twoOutUp">+1 Out</button>
+        <button id="twoOutDwn">-1 Out</button>
+        <button id="twoOutRst">Reset Outs</button>
+
+</div>
 
    <script src="app.js"></script>
 </body>
