@@ -13,23 +13,27 @@
     <div id="teamOne">
         <label id="countLabel">0</label>
         <center>
-        <h1 id="teamOne">Team One</h1>
-        <br>
-        <input id="oneInput", placeholder="Input Team Name Here">
-        <br>
+        <h1 label="teamOne">Team One</h1>
         <button id="savenameOne">Save Team Name</button>
-    </center>
+        <input id="oneInput", placeholder="Input Team Name Here">
+        </center>
     <div id="buttons">
-        <center>
             <button id="increase">Increase</button> 
             <Button id="decrease">Decrease</Button>
             <Button id="clear">Clear Scores</Button>
-        </center>  
            </div>
+
+           <div id="tOneOuts">
+            <h3>Team One Outs</h3>
+                <button id="oneOutUp">+1 Out</button>
+                <button id="oneOutDwn">-1 Out</button>
+                <button id="oneOutRst">Reset Outs</button>
+                <label id="teamOneOutsLabel">0</label>
         
+        </div>       
     </div>
-<br>
-<br>
+
+
 <div id="teamTwo">
     <label id="countLabelTwo">0</label>
     <center>
@@ -41,11 +45,20 @@
     <button id="increaseTwo">Increase</button> 
     <Button id="decreaseTwo">Decrease</Button>
     <Button id="clearTwo">Clear Scores</Button>
-    </div>   
+    </div> 
+    
+    <div id="tTwoOuts">
+        <h3>Team Two Outs</h3>
+        <label id="teamTwoOutsLabel">0</label>
+            <button id="twoOutUp">+1 Out</button>
+            <button id="twoOutDwn">-1 Out</button>
+            <button id="twoOutRst">Reset Outs</button>
+    
+    </div>
+    
 </div>
 
 <br>
-
 
 <div class="flex-container">
     <label id="inning">Inning</label>
@@ -57,24 +70,8 @@
 <br>
 <br>
 
-<div id="tOneOuts">
-    <h3>Team One Outs</h3>
-        <button id="oneOutUp">+1 Out</button>
-        <button id="oneOutDwn">-1 Out</button>
-        <button id="oneOutRst">Reset Outs</button>
-        <label id="teamOneOutsLabel">0</label>
-
-</div>
 
 
-<div id="tTwoOuts">
-    <h3>Team Two Outs</h3>
-    <label id="teamTwoOutsLabel">0</label>
-        <button id="twoOutUp">+1 Out</button>
-        <button id="twoOutDwn">-1 Out</button>
-        <button id="twoOutRst">Reset Outs</button>
-
-</div>
 
    <script src="app.js"></script>
 </body>

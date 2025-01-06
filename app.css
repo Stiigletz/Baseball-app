@@ -1,36 +1,48 @@
 body {
     align-content: center;
     align-self: auto;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgb(252, 0, 42) 0%, rgb(7, 158, 32) 100%);}
+    background-image: url(backgroundbball.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+
+}
+    
 
 #countLabel{
     display: block;
     text-align: center;
     font-size: 8em;
+    color: bisque;
 }
 
 #countLabelTwo{
     display: block;
     text-align: center;
     font-size: 8em;
+    color: bisque;
 }
-#h2 {
+h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     font: bolder;
+    color: bisque;
 }
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
+    font: bolder;
+    color: bisque;
 }
 
 #teamOne {
-    float: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     font: bolder;
+    float: left;
+    padding-left: 2%;
+    color: bisque;
     
     
 }
@@ -40,35 +52,42 @@ h1 {
     font-size: x-large;
     font: bolder;
     float: right;
+    padding-right: 2%;
+    color: bisque;
 }
 
 #buttons {
     margin: auto;
-    max-width: fit-content;
 }
 
 .flex-container {
     text-align: center;
-    border: 5px;
+    text-decoration-thickness: 5px;
+    margin-block: 0px;
     font-style: oblique;
-    font-size: 60px;
-    color: azure;
+    font-size: 80px;
+    color: bisque;
+    min-width: auto;
+    padding-top: 10%;
 }
 
 #tOneOuts {
-    margin-bottom: auto;
-    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
     font-style: oblique;
     font-size: x-large;
-    color: azure;
+    color: bisque;
 
 }
 
 #tTwoOuts {
-    margin-right: auto;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
     font-style: oblique;
     font-size: x-large;
-    color: azure;
+    color: bisque;
 
 }
 
