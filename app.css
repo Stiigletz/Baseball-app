@@ -21,13 +21,13 @@ body {
     font: bolder;
 }
 
-#h1 {
+h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
-    font: bolder;
 }
 
 #teamOne {
+    float: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     font: bolder;
@@ -39,6 +39,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
     font: bolder;
+    float: right;
 }
 
 #buttons {
@@ -47,14 +48,16 @@ body {
 }
 
 .flex-container {
-    margin-right: auto;
+    text-align: center;
+    border: 5px;
     font-style: oblique;
-    font-size: x-large;
+    font-size: 60px;
     color: azure;
 }
 
 #tOneOuts {
-    margin-right: auto;
+    margin-bottom: auto;
+    display: block;
     font-style: oblique;
     font-size: x-large;
     color: azure;
@@ -67,4 +70,10 @@ body {
     font-size: x-large;
     color: azure;
 
+}
+
+.teamOneOutsLabel {
+    font-size: x-large;
+    margin: auto;
+    float: right;
 }

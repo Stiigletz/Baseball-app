@@ -10,40 +10,42 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="app.css">
-    <label id="countLabel">0</label>
-    <div>
+    <div id="teamOne">
+        <label id="countLabel">0</label>
         <center>
         <h1 id="teamOne">Team One</h1>
+        <br>
         <input id="oneInput", placeholder="Input Team Name Here">
+        <br>
         <button id="savenameOne">Save Team Name</button>
     </center>
+    <div id="buttons">
+        <center>
+            <button id="increase">Increase</button> 
+            <Button id="decrease">Decrease</Button>
+            <Button id="clear">Clear Scores</Button>
+        </center>  
+           </div>
+        
     </div>
 <br>
-   <div id="buttons">
-<center>
-    <button id="increase">Increase</button> 
-    <Button id="decrease">Decrease</Button>
-    <Button id="clear">Clear Scores</Button>
-</center>  
-   </div>
 <br>
-<label id="countLabelTwo">0</label>
 <div id="teamTwo">
+    <label id="countLabelTwo">0</label>
     <center>
     <h2 label="teamTwo">Team Two</h2>
     <input id="twoInput", placeholder="Input Team Name Here">
     <button id="savenameTwo">Save Team Name</button>
 </center>
+    <div id="buttons">
+    <button id="increaseTwo">Increase</button> 
+    <Button id="decreaseTwo">Decrease</Button>
+    <Button id="clearTwo">Clear Scores</Button>
+    </div>   
 </div>
 
 <br>
 
-<div id="buttons">
-<button id="increaseTwo">Increase</button> 
-<Button id="decreaseTwo">Decrease</Button>
-<Button id="clearTwo">Clear Scores</Button>
-</div>
 
 <div class="flex-container">
     <label id="inning">Inning</label>
@@ -57,13 +59,14 @@
 
 <div id="tOneOuts">
     <h3>Team One Outs</h3>
-    <label id="teamOneOutsLabel">0</label>
         <button id="oneOutUp">+1 Out</button>
         <button id="oneOutDwn">-1 Out</button>
         <button id="oneOutRst">Reset Outs</button>
+        <label id="teamOneOutsLabel">0</label>
+
 </div>
-<br>
-<br>
+
+
 <div id="tTwoOuts">
     <h3>Team Two Outs</h3>
     <label id="teamTwoOutsLabel">0</label>
