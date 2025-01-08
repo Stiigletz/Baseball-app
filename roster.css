@@ -1,0 +1,95 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url(backgroundbball.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.roster {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Input Field Styling */
+#teamOneRosterInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#teamOneRosterInput:focus {
+    border-color: #007bff;
+}
+
+/* Button Styling */
+#addPlayerButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addPlayerButton:hover {
+    background-color: #0056b3;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove Button Styling */
+ul li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+    background-color: #a71d2a;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-style: double;
+}

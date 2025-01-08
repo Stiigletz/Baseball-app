@@ -1,3 +1,4 @@
+
 //Team One Variables
 const  increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
@@ -43,9 +44,6 @@ let inningTimer = '0:00';
 
 
 
-
-
-
 // Team One Functions
 
 increaseBtn.onclick = function() {
@@ -66,7 +64,6 @@ clearBtn.onclick = function() {
 savenameOne.onclick = function() {
     const userInput = document.getElementById("oneInput").value;
     document.querySelector("h1").textContent = userInput;
-    
 }
 
 //Team Two Functions
@@ -156,4 +153,3 @@ if (teamOneOuts === 3 && teamTwoOuts === 3) {
     teamTwoOutsLabel.textContent = teamTwoOuts;
 }
     }
-
