@@ -98,3 +98,26 @@ h1 {
     margin: auto;
     float: right;
 }
+
+
+.clock {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    background: #333;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: inline-flex;
+    margin-left: 400px;
+    margin-top: 100px;
+    
+    
+  }
+  
+  .clock span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
