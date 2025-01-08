@@ -221,4 +221,4 @@ function updateClock() {
     document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
 }
 
-setInterval(updateClock, 1500);
+setInterval(updateClock, 1000);
