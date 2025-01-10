@@ -25,6 +25,25 @@ function saveToLocalStorage() {
 
 }
 
+
+//Function to update Team Names
+function teamOneNameUpdate() {
+    const storedInput = localStorage.getItem("teamOneName");
+
+    document.getElementById("teamOne").textContent = storedInput;
+
+}
+
+function teamTwoNameUpdate() {
+    const storedInput = localStorage.getItem("teamTwoName");
+
+    document.getElementById("teamTwo").textContent = storedInput;
+}
+
+window.onload = teamOneNameUpdate;
+window.onload = teamTwoNameUpdate;
+
+
 // Function to add a player to the Team One roster
 function addToRoster() {
     const playerName = userInput.value.trim(); // Get and trim user input
@@ -74,8 +93,15 @@ function updateRosterUI(playerName) {
     removeButton.style.marginLeft = "10px";
     removeButton.addEventListener("click", () => removeFromRoster(playerName, rosterItem));
 
+    // Modify Button Roster 1
+    const modifyButton = document.createElement("button");
+    modifyButton.textContent = "Edit Player";
+    modifyButton.style.marginLeft = "5px";
+    modifyButton.addEventListener("click", () => modifyFromRosterOne(playerName, rosterItem));
+
     // Append the button to the list item and the list item to the UL
     rosterItem.appendChild(removeButton);
+    rosterItem.appendChild(modifyButton);
     teamOneRosterList.appendChild(rosterItem);
 }
 
@@ -89,8 +115,16 @@ function updateRosterUITwo(playerNameTwo) {
     removeButtonTwo.style.marginLeft = "10px";
     removeButtonTwo.addEventListener("click", () => removeFromRosterTwo(playerNameTwo, rosterItemTwo));
 
+    //modify button roster 2
+
+    const modifyButtonTwo = document.createElement("button");
+    modifyButtonTwo.textContent = "Edit Player";
+    modifyButtonTwo.style.marginLeft = "5px";
+    modifyButtonTwo.addEventListener("click", () => modifyFromRosterTwo(playerNameTwo, rosterItemTwo));
+
     //Append button to the list item and the list item to the UL
     rosterItemTwo.appendChild(removeButtonTwo);
+    rosterItemTwo.appendChild(modifyButtonTwo);
     teamTwoRosterList.appendChild(rosterItemTwo);
 }
 
@@ -114,6 +148,75 @@ function removeFromRosterTwo(playerNameTwo, rosterItemTwo) {
 
 }
 
+//functions to modify arrays for team rosters
+function modifyFromRosterOne(playerName, rosterItem) {
+    const index = rosterArray.indexOf(playerName);
+    if (index > -1) {
+        const newPlayerName = prompt("Enter New Player Name:", playerName);
+
+        if(newPlayerName && newPlayerName.trim() !== "") {
+            rosterArray[index] = newPlayerName;
+            saveToLocalStorage();
+
+
+            //Clear HTML Content to prevent func error and appending button duplication
+            rosterItem.innerHTML = "";
+            rosterItem.textContent = newPlayerName; //Updating UI roster 1
+
+
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Remove";
+            removeButton.style.marginLeft = "10px";
+            removeButton.addEventListener("click", () => removeFromRoster(newPlayerName, rosterItem));
+
+            const modifyButton = document.createElement("button");
+            modifyButton.textContent = "Edit Player";
+            modifyButton.style.marginLeft = "5px";
+            modifyButton.addEventListener("click", () => modifyFromRosterOne(newPlayerName, rosterItem));
+
+            rosterItem.appendChild(removeButton);
+            rosterItem.appendChild(modifyButton);
+        }
+    }
+}
+
+
+
+
+
+function modifyFromRosterTwo(playerNameTwo, rosterItemTwo) {
+    const indexTwo = rosterTwoArray.indexOf(playerNameTwo);
+    if (indexTwo > -1) {
+        const newPlayerNameTwo = prompt("Enter New Player Name:", playerNameTwo);
+
+        if(newPlayerNameTwo && newPlayerNameTwo.trim() !== "") {
+            rosterTwoArray[indexTwo] = newPlayerNameTwo;
+            saveToLocalStorage();
+
+
+            rosterItemTwo.textContent = newPlayerNameTwo; //updating the UI here
+
+            //CLear HTML Content to prevent function error by appending html button on top of old button, and update new player's name
+            rosterItemTwo.innerHTML = ""; 
+            rosterItemTwo.textContent = newPlayerNameTwo; 
+
+
+            const removeButtonTwo = document.createElement("button");
+            removeButtonTwo.textContent = "Remove";
+            removeButtonTwo.style.marginLeft = "10px";
+            removeButtonTwo.addEventListener("click", () => removeFromRosterTwo(newPlayerNameTwo, rosterItemTwo));
+
+            const modifyButtonTwo = document.createElement("button");
+            modifyButtonTwo.textContent = "Edit Player";
+            modifyButtonTwo.style.marginLeft = "5px";
+            modifyButtonTwo.addEventListener("click", () => modifyFromRosterTwo(newPlayerNameTwo, rosterItemTwo));
+
+            rosterItemTwo.appendChild(removeButtonTwo);
+            rosterItemTwo.appendChild(modifyButtonTwo);
+        }
+    }
+}
+
 // Event listener for the add button
 addButton.addEventListener("click", addToRoster);
 addButtonTwo.addEventListener("click", addToRosterTwo);
@@ -121,6 +224,8 @@ addButtonTwo.addEventListener("click", addToRosterTwo);
 // Initialize roster on page load
 initializeRoster();
 initializeRosterTwo();
+teamOneNameUpdate();
+teamTwoNameUpdate();
 
 //Nice little clock here
 
@@ -132,5 +237,6 @@ function updateClock() {
 
     document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
 }
-
+updateClock();
 setInterval(updateClock, 1000);
+window.onload = updateTeamNames;

@@ -44,6 +44,7 @@ function saveState() {
     localStorage.setItem("inningCounter", inningCounter);
     localStorage.setItem("teamOneOuts", teamOneOuts);
     localStorage.setItem("teamTwoOuts", teamTwoOuts);
+
 }
 
 // Load the state from local storage
@@ -85,6 +86,7 @@ function clearState() {
 window.onload = function () {
     loadState();
 };
+
 
 // Team One Functions
 increaseBtn.onclick = function () {
@@ -210,8 +212,23 @@ function checkOuts() {
 }
 
 
-//Nice little clock here
+//Function to Grab data from app.html and update team names on roster page
+function updateTeamNames() {
+    const teamOneName = localStorage.getItem(teamOneName);
+    const teamTwoName = localStorage.getItem(teamTwoName);
 
+    document.getElementById("oneInput").textContent = teamOneName;
+    document.getElementById("twoInput").textContent = teamTwoName;
+
+    localStorage.setItem("nameOne", teamOneName);
+    localStorage.setItem("nameTwo", teamTwoName);
+
+      // Redirect to the second page
+  window.location.href = "roster.html";
+}
+
+
+//Nice little clock here
 function updateClock() {
     const now = new Date();
     const hours = now.getHours().toString().padStart(2, '0');
