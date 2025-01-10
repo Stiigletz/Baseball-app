@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team Rosters</title>
     <link rel="stylesheet" href="roster.css">
 </head>
 <body>
-
+    <!-- Clock Section -->
     <div class="clock" id="clock"></div>
 
+    <!-- Roster Container -->
+    <div class="roster-container">
+        <!-- Team One Roster -->
+        <div class="roster" id="teamOneRoster">
+            <h2 id="teamOne">Team Roster 1</h2>
+            <input type="text" id="teamOneRosterInput" placeholder="Enter player's name">
+            <button id="addPlayerButton">Add Player</button>
+            <ul id="tOnePlayer"></ul>
+        </div>
 
-
-    <div class="container">
-        <center><h2>Team Roster Manager</h2>
-        <input type="text" id="teamOneRosterInput" placeholder="     Enter player's name"></center>
-        <button id="addPlayerButton">Add Player</button>
-        <ul id="tOnePlayer"></ul>
+        <!-- Team Two Roster -->
+        <div class="roster" id="teamTwoRoster">
+            <h2 id="teamTwo">Team Roster 2</h2>
+            <input type="text" id="teamTwoRosterInput" placeholder="Enter player's name">
+            <button id="addPlayerButtonTwo">Add Player</button>
+            <ul id="tTwoPlayer"></ul>
+        </div>
     </div>
-    
-</body>
-<script src="roster.js"></script>
 
+    <script src="roster.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>
