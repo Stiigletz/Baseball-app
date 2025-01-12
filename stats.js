@@ -91,5 +91,5 @@ function renderPlayers() {
     });
 }
 
-// Initialize the table
+// Init the Table here. Bc its a nice table. holds a couple eggs
 renderPlayers();

@@ -10,13 +10,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Button Styling */
 button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     padding: 10px 20px;
     color: white;
-    background-color: #800707; /* Blue button */
+    background-color: #800707; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -25,13 +24,13 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slightly increase button size on hover */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
 }
 
 button:active {
-    background-color: #70071d; /* Even darker blue on click */
-    transform: scale(0.98); /* Slightly decrease button size on click */
+    background-color: #70071d; 
+    transform: scale(0.98); 
 }
 
 button:focus {
@@ -39,7 +38,6 @@ button:focus {
     box-shadow: 0 0 5px rgba(121, 159, 201, 0.75);
 }
 
-/* Label Styles for Count */
 #countLabel,
 #countLabelTwo {
     display: block;
@@ -48,7 +46,6 @@ button:focus {
     color: bisque;
 }
 
-/* Headings Styling */
 h1, h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
@@ -56,7 +53,6 @@ h1, h2 {
     color: bisque;
 }
 
-/* Team Name Styling */
 #teamOne, #teamTwo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
@@ -74,12 +70,10 @@ h1, h2 {
     padding-right: 2%;
 }
 
-/* Buttons Container */
 #buttons {
     margin: auto;
 }
 
-/* Flex Container */
 .flex-container {
     text-align: center;
     margin-block: 0px;
@@ -90,7 +84,6 @@ h1, h2 {
     padding-top: 20%;
 }
 
-/* Team Outs Styling */
 #tOneOuts, #tTwoOuts {
     vertical-align: middle;
     text-align: center;
@@ -100,14 +93,12 @@ h1, h2 {
     color: bisque;
 }
 
-/* Team One Outs Label Styling */
 .teamOneOutsLabel {
     font-size: x-large;
     margin: auto;
     float: right;
 }
 
-/* Clock Styling */
 .clock {
     font-size: 5rem;
     font-weight: bold;
@@ -135,7 +126,6 @@ h1, h2 {
     }
 }
 
-/* Footer Navigation Bar */
 .footer-nav {
     display: flex;
     justify-content: space-around;
@@ -164,7 +154,7 @@ h1, h2 {
 .nav-link i {
     font-size: 1.5rem;
     margin-bottom: 5px;
-    color: #ff6b6b; /* Baseball red for icons */
+    color: #ff6b6b; 
 }
 
 .nav-link span {
@@ -181,13 +171,13 @@ h1, h2 {
 }
 
 .footer-nav .nav-link:nth-child(1) i {
-    color: #27ae60; /* Green for Stat Tracker */
+    color: #27ae60; 
 }
 
 .footer-nav .nav-link:nth-child(2) i {
-    color: #2980b9; /* Blue for Game Manager */
+    color: #2980b9; 
 }
 
 .footer-nav .nav-link:nth-child(3) i {
-    color: #f39c12; /* Yellow for Roster Management */
+    color: #f39c12; 
 }
